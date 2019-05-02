@@ -1,0 +1,35 @@
+{
+  "name" : "Netflix price data",
+  "description" : "Parsing Netflix price data and loading it into Neo4j using Kettle",
+  "environmentHomeFolder" : "CHANGE TO THE PATH WHERE YOU CHECKED OUT THIS PROJECT",
+  "metaStoreBaseFolder" : "${ENVIRONMENT_HOME}",
+  "unitTestsBasePath" : "${ENVIRONMENT_HOME}",
+  "dataSetsCsvFolder" : "${ENVIRONMENT_HOME}/datasets",
+  "enforcingExecutionInHome" : true,
+  "autoSavingSpoonSession" : true,
+  "autoRestoringSpoonSession" : true,
+  "variables" : [ {
+    "name" : "NEO4J_HOSTNAME",
+    "value" : "192.168.1.15",
+    "description" : "Hostname of the Neo4j demo server"
+  }, {
+    "name" : "NEO4J_USERNAME",
+    "value" : "neo4j",
+    "description" : "Username"
+  }, {
+    "name" : "NEO4J_PASSWORD",
+    "value" : "Encrypted 2be98afc86aa7f2e4bf0bb66189c5f88d",
+    "description" : "Password (use encr.sh to obfuscate)"
+  }, {
+    "name" : "NEO4J_BOLT_PORT",
+    "value" : "7687",
+    "description" : "The Bolt port to connect to (Default: 7687)"
+  }, {
+    "name" : "NEO4J_WEB_PORT",
+    "value" : "7474",
+    "description" : "The port of the web interface (Default: 7474)"
+  }, {
+    "name" : "NEO4J_LOGGING_CONNECTION",
+    "value" : "Demo"
+  } ]
+}
